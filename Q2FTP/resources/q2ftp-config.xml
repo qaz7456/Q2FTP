@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bankPro>
+	<ftpClient>
+		<host>192.168.112.164</host>
+		<user>mysqlmove</user>
+		<password>admin123</password>
+		<port>22</port>
+		<ein>20939790</ein>
+		<dir>/home/mysqlmove</dir>
+	</ftpClient>
+	<queueConnectionFactory>
+        <host>192.168.112.199</host>
+        <password>password</password>
+        <port>5672</port>
+        <username>admin</username>
+        <virtualHost>/</virtualHost>
+        <exchangeName>exchange</exchangeName>
+        <queueName>ian</queueName>
+        <routingKey>ian</routingKey>
+	</queueConnectionFactory>
+	<errorQueueConnectionFactory>
+        <host>192.168.112.199</host>
+        <password>password</password>
+        <port>5672</port>
+        <username>admin</username>
+        <virtualHost>/</virtualHost>
+        <exchangeName>exchange</exchangeName>
+        <queueName>ian</queueName>
+        <routingKey>ian</routingKey>
+	</errorQueueConnectionFactory>
+	<heartBeatClient>
+        <beatID>q2ftp</beatID>
+        <fileName>q2ftp</fileName>
+        <timeSeries>60000</timeSeries>
+	</heartBeatClient>
+</bankPro>

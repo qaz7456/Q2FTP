@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<class>
+    <heartBeatClientVO>
+        <beatID>test</beatID>
+        <fileName>test</fileName>
+        <timeSeries>60000</timeSeries>
+    </heartBeatClientVO>
+    <heartBeatConnectionFactory>
+        <host>192.168.112.199</host>
+        <password>password</password>
+        <port>5672</port>
+        <username>admin</username>
+        <virtualHost>/</virtualHost>
+    </heartBeatConnectionFactory>
+    <heartBeatDestination>
+        <amqp>true</amqp>
+        <amqpExchangeName>jms.durable.queues</amqpExchangeName>
+        <amqpQueueName>jmsHeart</amqpQueueName>
+        <amqpRoutingKey>jmsHeart</amqpRoutingKey>
+        <destinationName>jmsHeart</destinationName>
+    </heartBeatDestination>
+</class>

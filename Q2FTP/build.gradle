@@ -14,5 +14,8 @@ compileTestJava.options.encoding = 'UTF-8'
 dependencies {
 	compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.9.0'
 	compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.9.0'
-	compile 'commons-net:commons-net:3.6'
+  	compile 'com.google.code.gson:gson:2.8.1'
+	compile 'commons-net:commons-net:3.6'// https://mvnrepository.com/artifact/com.jcraft/jsch
+	compile group: 'com.jcraft', name: 'jsch', version: '0.1.54'
+	
 }
